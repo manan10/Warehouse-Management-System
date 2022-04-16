@@ -1,0 +1,56 @@
+<html lang="en">
+	<head>
+		<title> WMS | Inventory </title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|ZCOOL+XiaoWei" rel="stylesheet">
+    <link href="../../css/register.css" rel="stylesheet">
+		<style>
+            body
+            {
+                color: silver;
+                font-family: josefin sans;
+            }
+            label
+            {
+              font-size: 22px;
+              font-weight: normal;
+              
+            }
+            .tb
+            {
+              height:40px; 
+              border-radius:5px;
+              background-color:#282828;
+              font-family: calibri;
+            }
+        </style>
+	</head>
+    
+	<body style="background-color: #282828;">
+		<center>
+				<form class="form-inline" action="../../php/data/up.php" name="myform" method="POST">
+        <fieldset class="box" style="background-color: #e6e6e6;color:black;border-color:#282828;">
+          <h1 style="font-family: zcool xiaowei"><u> Update Date Of Delivery </u></h1>
+          <hr><br><br>
+          <div class="form-group">
+            <label for="id">Enter ID:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label> 
+            <input type="text" class="form-control tb" id="id" name="id" placeholder="Product ID" pattern="^\d{4}$" style="width:300px;" required>
+          </div>&nbsp;<sup><span class="glyphicon glyphicon-asterisk"></span></sup> 
+          <br><br>
+          <div class="form-group">
+            <label for="dod">New Date Of Delivery:&nbsp&nbsp</label> 
+            <input type="date" class="form-control tb" id="dod" name="dod" min="2019-03-30" max="2020-03-30" style="width:300px;" required>
+          </div>&nbsp;<sup><span class="glyphicon glyphicon-asterisk"></span></sup> 
+          <br><br>
+          <button  type="submit" name="sub" class="button1"> Submit </button>
+           <br><br>
+          </div>
+        </fieldset>
+      </form>
+    </center>
+   </body>
+ </html>   

@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>User Login</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=2">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4/7/.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <style>
+            .logo
+        {
+            height:70px;
+            width:70px;
+            float:initial;
+        }
+        #id,#pa
+        {
+        background: white;
+        border: 2;
+        border-radius: 5px;
+        text-align: left;
+        color: black;
+        width: 320px;
+        height: 30px;
+        margin-left: 20px;
+        position: relative;
+        top:20%;
+        }
+       
+    </style>
+    </head>
+    <body>
+        <center>
+            <img src="../images/ware.png" class="logo" style="margin-top: 20px;">
+            <h1><b><u>WareHouse Management System</b></u></h1>
+                    
+            <form action="../php/user_login.php" method="post">
+                <div id="content"><div id="loginlogo"><h2>User Login</h2></div>
+                    <label id="label">Username</label><br>
+                    <input id="id" type="text" name="un" required="required"><br>
+                    <label id="label">Password</label><br>
+                    <input id="pa" type="password" name="pwd" required="required"><br><br>
+                    <input id="btn" class="btn btn-primary" type="submit" value="Login">       
+                </div>
+            </form>
+        </center>
+	</body>
+</html>
